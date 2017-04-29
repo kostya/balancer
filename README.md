@@ -1,6 +1,6 @@
 # balancer
 
-Simple Tcp Balancer.
+Simple Tcp Balancer (when nginx or haproxy too heavy for your tasks)
 
 ## Installation
 
