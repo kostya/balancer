@@ -1,6 +1,8 @@
 require "socket"
 
 class Balancer
+  VERSION = "0.1"
+
   enum Method
     Sample
     RoundRobin
@@ -11,7 +13,7 @@ class Balancer
   def initialize(@listen_host : String,
                  @listen_port : Int32,
                  @target_host : String,
-                 target_ports : Range(Int32, Int32),
+                 target_ports : Range(Int32, Int32) | Array(Int32),
                  @method = Method::Sample)
     @stopped = false
     @server = TCPServer.new @listen_host, @listen_port
