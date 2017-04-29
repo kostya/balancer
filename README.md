@@ -19,6 +19,6 @@ require "balancer"
 
 # run balancer listen on 0.0.0.0:3000
 # and proxing all connections to 127.0.0.1:3001..3010
-balancer = Balancer.new("0.0.0.0", 3000, "127.0.0.1", 3001..3010)
+balancer = Balancer.new("0.0.0.0", 3000, "127.0.0.1", 3001..3010, Balancer::Method::RoundRobin)
 balancer.run
 ```
