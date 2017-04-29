@@ -1,0 +1,9 @@
+name: balancer
+version: 0.1.0
+
+authors:
+  - Konstantin Makarchev <kostya27@gmail.com>
+
+crystal: 0.22.0
+
+license: MIT
