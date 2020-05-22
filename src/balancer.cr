@@ -63,9 +63,9 @@ class Balancer
 
   private def copy_io(r, w)
     IO.copy(r, w)
-  rescue Errno
+  rescue IO::Error
   rescue Socket::Error
-  rescue IO::Timeout
+  rescue IO::TimeoutError
   ensure
     w.close
     r.close
