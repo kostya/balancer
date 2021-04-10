@@ -1,9 +1,9 @@
 name: balancer
-version: 0.2
+version: 0.3
 
 authors:
   - Konstantin Makarchev <kostya27@gmail.com>
 
-crystal: 0.22.0
+crystal: ">= 0.22.0"
 
 license: MIT

@@ -1,7 +1,7 @@
 require "socket"
 
 class Balancer
-  VERSION = "0.2"
+  VERSION = "0.3"
 
   enum Method
     Sample
